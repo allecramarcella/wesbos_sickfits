@@ -14,14 +14,15 @@ const GlobalStyles = createGlobalStyle`
   html {
     --red: #ff0000;
     --black: #393939;
-    --grey: #3a3a3a;
+    --grey: #3A3A3A;
     --gray: var(--grey)
     --lightGrey: #e1e1e1;
     --lightGray: var(--lightGrey);
     --offWhite: #ededed;
-    --maxWidth: 100px;
+    --maxWidth: 1000px;
     --bs: 0 12px 24px 0 rgb(0,0,0,0.09);
     box-sizing: border-box;
+    font-size: 62.5%;
   }
 
   *, *:before, *:after {
@@ -56,12 +57,12 @@ const InnerStyles = styled.div`
   padding: 2rem;
 `
 
-export default function Page( { childeren }) {
+export default function Page({ children }) {
   return (
     <div>
       <GlobalStyles />
       <Header />
-      <InnerStyles>{childeren}</InnerStyles>
+      <InnerStyles>{children}</InnerStyles>
     </div>
   );
 }
