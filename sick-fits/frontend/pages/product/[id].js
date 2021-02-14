@@ -1,4 +1,5 @@
-export default function SingleProduct ({ query }) {
-  console.log(query)
-  return <p>Hi I'm single product {query}</p>
+import SingleProduct from "../../components/SingleProduct";
+
+export default function SingleProductPage({ query }) {
+  return <SingleProduct id={query.id} />;
 }
