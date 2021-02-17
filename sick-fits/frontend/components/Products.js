@@ -26,7 +26,6 @@ const ProductsListStyles = styled.div`
   grid-gap: 60px;
 `
 
-
 export default function Products(){
 
   const { data, error, loading } = useQuery(ALL_PRODUCTS_QUERY);
