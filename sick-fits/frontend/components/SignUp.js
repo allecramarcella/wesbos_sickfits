@@ -45,7 +45,7 @@ export default function SignUp(){
     <Form method="POST" onSubmit={handleSubmit}>
       <h2>Sign Up For Your Account</h2>
       <DisplayError error={error} />
-      <fieldset>
+      <fieldset disabled={loading} aria-busy={loading}>
       {data?.createUser && <p> Signed up with {data.createUser.eamil} - Please Go Head and Sign in!</p>}
         <label htmlFor="name">
           Your Name
